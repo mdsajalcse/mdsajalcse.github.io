@@ -24,6 +24,8 @@
     <!-- animastion of portfolio  -->
     <script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
     <script src="js/isotope.pkgd.min.js" type="text/javascript"></script>
+      <!-- Font Awesome icons (free version)-->
+      <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -103,7 +105,7 @@
     <!-- Home End -->
 
     <!-- About Start -->
-    <section class="site-section bg-dark" id="section-about">
+    <section class="site-section" id="section-about">
         <div class="container">
             <!-- <div class="row mb-5 align-items-center">
                 <div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0">
@@ -133,191 +135,139 @@
     </section>
     <!-- About End -->
     <!-- Skills Start -->
-    <section class="site-section" id="section-skill">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 mb-5">
-                    <div class="section-heading text-center">
-                        <h2 class="pt-3 font-weight-lighter">My <strong>Skills</strong></h2>
-                    </div>
-                </div>
 
-                <div class="col-12 mb-5">
-                    <div class="section-heading text-center">
-                        <h2 class="pt-3 font-weight-lighter"><strong>Technologies</strong></h2>
-                    </div>
-                </div>     
-            </div>
-            <div class="row text-center">
-                
-                <div class="col-lg-1 col-md-2 col-sm-3 col-xs-6 mb-2 mx-auto">
-                    <img class='icon-size' alt="HTML5" src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-html-logo-0.png" />
-                    <h6><strong>HTML5</strong></h6>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-3 col-xs-6 mb-2 mx-auto">
-                    <img class='icon-size' alt="CSS3" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL4AAAEKCAMAAACbhh94AAABIFBMVEUBcLr///8oqd/Q0NDv7+8CAgLu7u76+vr09PQAabcAbrn8/Pz39/fz8/MAa7gpq+BdkcjU0tGbsMgNpN3B4fMAYbWVlZUAZLaCrtAAZ7e5ubnn8/pzuNwdg8arq6vHx8chISG+yNCioqJWVlYAXbNkZGQ7g8Ll5eXJ0NNvb28UFBQZGRlOTk5lZWW8vLy11umQv9nd5OlQk8Yier4QICmEhITT5fHd3d1pmMtnvObS6feyu8rJ1NzG1urv9vsWicqizuZfm8snnNUFEBUfP1A/SU83Nzd5jZogNUEjMDg8YHRKXGeswNp1n8dBe7wnldCrx9d8oMxEi8R3lr6fv9+Pqs6Lx+iku85Tgrqhxd92rNZRrdmv2fGpuMq7yd6VzeuGvVeqAAAVkklEQVR4nO2dDVvbSJKAJdBZUuvDBuPIioEMGcdhZ3YwoB1DEnAgO3O3excIITgESJj//y+u9enulqrV+ophn1RmeJCR5FetVlWpu6pakiOxlEBaarRttsIPLH9D2dzcfALJ8+fP8Z+fa0pL/t3f3nz+PHs3/8fmsqXJz54GshnJ06fp7R38rSqJ4Eu03TKibU2RhPBX/itf8P6ywG6bmib/LX+3v9eJf5D/fb+K4ltC+D//wP+B/wNfDL8Vyhw/lODYvX+I4LdqxycQAvxI4m2tJVmhKEYkWvSBGX+g4I2Df+bjW7IhhC+rhhA+g+CLHG7K0aalGpLC3pDwDrXMaNvA25aA3v/FbyMxfFUE32i1NAIhYEp39DS+Ug7/jymF/xMgDH7w2S+/YqF3++WFoTSC/+JppmxuqST+3/CBMiAE/k8hjWGoBnmAgXsJRmwC/4lsqZaKn5Dku+KeSOL79z75suiBi89I4P8afJbuvwFvI63/JDpZpoYlWh+rUebLMvB/Cj5L6cPog8Xhv3h5cLA3GEynU1VVzVDiLyf7fvCtft/xFUoieAPrfKHWj3UpceeoW417QUuh8ekDSANBPcz/+OOPP//88++J/PwCy887skro/RfBZz+Hf3vxWyIvnpik5mH0vZLYKEmNRIvEjLbN+AP8u0GYrd9lZgfiACHFqZpiDjONQDGqyVcSVjezT6Ss7u/xAWkDUb/VJRCyHxIxnycTP/2QPFSX7Qf+fxD+b4vDfwLjt4xngDyh8ZeDD3d2NneCkYWdUJ7tPK2AL+jvz/EzDETgaSc7WKalacH2Uxo//grT9O1V/I1Yn7P4gL9PaB5TQFTK5xE5ghaDxDfg/V6S+EJnFrK6lNMQ35bM20S20fy+WiR+0qhK6gCLwDc4VnfeU0p4nNErUHLLw0016RPRu1FCpykmg8906QhBkTUSvxmX7b9/e5Ep/+O/rrwE5DmFr7TCT+NGjfdqHVD43/Vt61/+Afm7RW9bv6SF3q2p1q8BX8hsfWf8Aq/qQmarbOdpfqRBDJ830pB4x9J8zCQUkxnnUf3fBfD/rRmC4zymmNNAIwSSHosSs7oCg4T/O23A38+xKKL+vhD+wx2iFeg8/6eK4wt0nlpnV6Y72YNTxKzUDn7AzM1gmms+W5UhB1gf7jzPlVrntoIdwtfkZDt+cY7P5euH4NU96ZnMAUa4majzeIe5B8ps14rPaq8sAxFIvAOrkuMzCqjz74GfYSBE8EWskSh+SvMoCb7CHBttK4x5VpKxv7wD4jMm+PEOLILwGXHri/j7mUNcWaNsYRsB3nlCBfn7LILIKBt7i4W7tHAvSw3R5vcJ5jZVdNkWg1+bv/+j9X+0/iPDr2164gErzvQVCTZqWaehGavL+kuxQ8V6YHOHinHZcg8w4rkRaIfCCIYldR6zzCQ9FjuUvG3xHQofUBjBWZU2kPRoxXkvndqLhigv7rF09pjx16T3+qIhyos7kd47i4YoL7YljR8vPkKyNHEXTVFakIR9nsfb93187fFqHnskS6b0aO2Wfvqo8d1VWTJGj7b3uPfY3z9t9NlFgUjhD4n4nZX0x+l9mH7SuzcledYo/oaH//k/vA2P+n0j9UPgE/rc7rEiyd+aVPxuu055Sze/PcH4x71G8Zfqk7b3n4SPpAHGnzTZ9/Va8R0a/9zw8ZtUnPXi0w1tn8stSR40abfqxacb2u4YLUnVzh8NPt36+r6sSa3Hg/+OVvFOX5YlxWzSa2ge39hvUPU4NeK3P9CgboCv3jaIX6feZ42usxXg9xv0GprE7x0ZjwqfGRDUJxi/Zd43ONZQq9NAO5wITfxwJO2oQaen1tan8e3zqeqHIzU5VFJr6zP+ZiecnmjSa6gVnz61fhiGZAy87K+uQ2o1W4zPEOHLneZa364RnzG67mmEf9ic19AgPvYZIvzmzG6T+Df5+K6O/6XFmf+C/0Xif+qQf8RHDpe6lYSgZ12e3lE0MXoLaU4krVaVtRIyxv8FsrZO8Lc36D4+HIThSGYfNLvuSkVZlivJDYVPa5jhXhjTwPEa3JXlilIN/zOFT/cMNFACfI7X0NteLP4r8tFlzJMd4St7QxD/omrz14lPdR57NI0CYgag5nF2F4w/7zztLk2JRlqMzw7dzvH7C8Wf3hGN36X1I/qkxvj2A8UfkGq/S6PpH7UoHGk6gvD1sweDv/SOVvtO34zDkQ4hfHRYFR8sdyAir0mr+44xujdJDPNH6Nm1LyvSN4g/TqKpZpDdQl5VxV8Jf0Jarbd2Gj9s/SvY7C4Uf0ziM3MTw1aCfwPjP1skPuWxMUZ3aCb4sNfgbFV8dqvQ8/GNBN8CvYbKZrcSPmm1GHxkywL4blXFXxs+O84wkuPqSJoC4ttVFX8VeoODjy6NIGvOD0s1QZ8NdR4KPmN09ZmRZE+YoM9mjypqzir4LcpnoBHdmZVEkKuX4EgPqqh6qijOCcflIfGNT+BIj7N1UOFNtxr+Gqk3PzAe25WW4GtwWAYa7cdyetoXk9XVb298+bbVHH5vPG99C3R6ML/uRhHDbk9IgjGfHt7ZW62IP+a4PMOJlaQfWLDTU1Jsff9N5c5DWy0Gv2UFmieoYgE7PaXEcc4uVlaqPron1BgbO8oTVtEI0w8mNU6wIMfrr6zE+qosuzVeIumX2vQkBNL9neLsib3a8PXe5e4yoWvLwU92aXgfn26jgDvJGAW9hkKCXOkQK1pS75s8ymwx9tZZ+KX2Et31kUfj1zBDgVzvbGuFsXKF4dWTVyl4LF1mUnSfwgeHSgrAj1aXWfjC+Mbndgb7UupN1z6j8GGvQUz04eXFcpZ7UQh+st7Nhl9a+sDMTbyn8CtlsCAHHW6/zPaNxBWnOW6D8CmPLcJvhVXx5P3S01vI7o36ywdVXbbpSVaPnz+6rMszNsKqeGG6XdlYVKxrOteZvaYQ/gDq8gk+7TMgd6IQ2dJWuRQQpEtpXVMY35i84rMvpYwu0idkxqhVJgXEdrFTxocXwDfGrzhdPsFnZv5tqyK+7oyuD/Lgc/GtvwTYfXyaHiGVytctGIuKHPts+0DkPYwLP/ksBp/2GZBJ4beKKE7d9Xa38xs+B99Yu+MqGxqfmVrxZBpfWHEiHV2+ORJ+AYbgB1/vhNnT+Paln+w7r45kgGMNDLwrnV4INjyMbwyEe00kzMSWc2tEVbCjM0oizW+7qH8k1OW5+GPYN4CEcXmc++BE82xpgVhUfdi5LtLw2fh83wCQ9lva5elF+EmFmLxgTuS4p7lKPkMYxTnYLc7u439gXJ5jBn+VG9Bmu9ivKQHP4HM8yrzWZ0I4Wfx7Dr7tdrCiLMFO40/SL1HC+B4bwsngc1JA0OhNqYan8KfYsYGaHn/OD+VJuTzSQBxfL6ZrsvHHu+ug+H/a3cX/Bf8HcnExXodbH3kWg88J5nSrxGWUH+f5ixxjY/tDuAtWnFHBDU4GSyX80vTyZ7L1mcH9kclUR5p64My6sxB8g+o8TAjnqaFQPo/CSQFxVxeBr3KiSdL4nBQQffbQ8J2+yuAbHdDsLh6/zQyTuCl8FYyGlNzF4JNd/y0bwmmm8MHWt6vgl1acU97UypEV48eFhuAUEHu/Ar6aDyqAzybdTJRYccZFoeFgTnS58NZPhXAGtatlzUqqI/FSQBaBv8fB96bhPkRxJ84ES68Cfonx/VCoqSE21zLahyhoyRkqcRaBT04rMnkTWfhTOAVkIa1PujxM6+sZ+ByvoUoocC34zDiDfZrGV7+A+FWCUetpfWacoZ/GNzuw01MhJqkWfHaY5CbGb0lJqTY4BUT/tAB8Io4tlfaxZcTrBSUlFeEUEAl1StOXxjdJj22Dwd8La6iTFSE50ZB6hVjasvjTNolP8wz3kuKFc/wLzhB/+ZCq0vhLML6ThQ8HBiApNcojHJBU1mUbkFaLiWewBxn4UzgwAB1tM7IlKgOuwBdH49M03rQYvj2ixfPY2jm6i1xku0x5HRcN3/GSyt6NQXwy+prJdEUddY6fVBqdcoYJkU4J0lN1gaL9iLJAkv+pu8ST7jGITzic7S7jM3yM66lG4UiBcJye8sLP1+3CrX9BtD6bNzGbr/szL+YKp4A0hw/rpV0Cv8sGEcY7kSXUTTAFZBH4ZMYW6zPELg9VwF772EDOeg4+SE/isy/qw6TLkficzMsF42+k0z4y8GuPhpTyctUF8VMxkA8E/w6kpxLO2AjUTHxt3EC5CX6ytyA+o9EdkygjnSyEY9YXDTkXbut3d2F80uFkqmN46nyBIaIGuVFPNCT9XVz8ExD/Nezy2J3sxdoeKH6bcXn0GVDAnoOBnLT4JQLy5uLL4k9go+tC+Jwcii++l8w689vbF5c5/Hz8ryA+OcaWSvsA8OFqGehL9sv6QV41TP6jC+Ovczy2KwCfk0PRCP7SRAifjYG8KY4PZI6u5BWGKotPjjOwVmstA99fCAc2u8jbagJ/Twif9dheEgsMEYu1WfBQCZKy859WtnIcDX5dtqkQPuPy9NTsxdosjtdgZ4/S5uLzPU5w7oIepKLHGYZm9oJV1usS+DmvOHx8sPHJhDM2AtUB8BWFg/8tW/Uc5YTw1YDPGF3JlQF8E8Z3AfztnPf7kvhr8DCJ7cH4YFPqAP4yPCuQj98WwmdTRfchfBnGB2fWq+Cvg/hjGN8+y8ZvtWS4QJt+m42/klNVrA58ZpzhvUkqTsLqcnIobGBqeiWnqhgPvwvjk6M8TAxk7z244hPsNdgjAB+e1MjHh8fYiFCkVAjnGMR/D0+weAB+jtdQEp98VWRcHj8GEsKHh/gh/Gu+2YXxu932GojPyXR1YHw4hwLCX37Gf78HfB7MPn4NwssysWsq17IF4sPRkAjKWd/m42d4nN1u9+4r7Gv6QkWT0Al9CMkg/hrckRE0s77vua4Oug5M5/GDYz/DXn4sVGUYpjqGJIOLte3BWlC/huZ2t7duz0ae47p2xkWQ77qY/dXJRGSyi8JP+QzUYm3Ues2wA8aJhvRf2rfeXPe/nEuOrjPf1k7Y716NBwLovnwl8ZkQzkt5vsa0aRFWFzs9HLPLD+YMRx6Ovt3ue5Jjz7triN9dan9+bfGAYXwmnsG9NVpZa835/cmAU0CE4hrwJRysbF+vnm64rhNcA8bH7b6W390pOYF9BndG4lMuW8uAh23sU+G4huBOXFydjVDPcbCWKT4zvUvGMzAhnN84+HA0JNooFpbhX8LB8kVftLtTQo0zMC7PvQmtbtwy+jA+KhNVsrJShp72GVh8C1ycWeUsYqKXC4ophc8J4XQnAL5fLYPjs5UMg6+Mz4wzID8CNd6PCEcyVVU1OCkgzk0p/FIRJRx8zwqypJNwJGp90mPYf9TLBbSVoVcpo0tX4Tz3dwimJ5T02tKcFJCSgdhlomg51eTsLwF+tssmD8AUEPyGXwq/TDzPGsdnGPHwZTiYE/T46299Kv6XSfvY5+JzMi/LxdKWwf+LnNhi8ya4+Jd1RzJXxWerY7D49MrInNkSZ/dgpXjyX2H8yVeq7AFbePwowE+FIwV63+ThI8fdmK1urxS7hkLog7U7tvB4qiRVUB0jYaasLi8FJLgC3ZW8/vVWgSsQb/XX6+10RmnaZ1BaoL+vqFd5MT0Iua50efameqUAQqavPwP5pGxJKnsyf05TLptiHYlElSBdd0ad/rbIJeSjTz+vw+nfbDhGHr5oWAbuR653dr2d14/47Iqfdc/NQWaMbhDCCeLzEkczLsF1nMvZNfdhhtHNrydLOexY6N6ARhYfv2ihG3wJ+sbsAlRI2YpTW9tlE6LF8DsGhB/ElJdagwW5OlZI37ayLiGNb74e34nXOqA7j36oUfgtepynbDAnwpfgeqPbrZROpfHNwcmru0LVAphokrA6hpEVjhRIhTVYkK070pcz+hLmHqcxnawXQ/fjfxmjG0agEqNstM9TdREThHTH7vgVCaNLiF/sxn8VRQ+E8Rl6W8RzmuGyyXXEoiK3Z+/PwkfBwi9PX0/uxJ7TtDBZK8O9HPyaYlGR7Tj4Eq4vxieCKiZTUouV5OHXWNoS2di/KF0YI8KnTzmc5uDXWdrSfxSqLdrD4ut5+DUHc1ZcsCoVwpmHP6gXv+qSSczE1khl8edWNxg8gddgWQB+Ku3jkxEmqsytboIfXtG0emlL6gurtT4bjvFRI3tK2mVTak4BqbZIZzu92kcOvlrvym3ll8prt7vv3rKNcZWHr32sdeW2cvjt9tK7jQ1ksyh+5e4cfE5B7O+D3263P2xIelYnGI7z8GvOoSiIj9Fxj7GzZogD/JcwfuiDaovDx13mrafDM/R+2keLVZyR2VKSIlK12i0x/DZGf4d7DNTqydkMqqcoaatb8yrxAvhtX8d8wA5ersoLa0dznQYZXkajjOTq/fZS9y1+UIWMpQi+Wis+1+riv73D6MLvd/plPj4vBaRG/FDH6K5gIc3wZDMB/CInzJVslw3rmA+e7Rb9IlcA3xg5NfKn8X0d8xbU7NxzDa/S+MxAiWwe97/ovUyjVxW/HTgDHrKLe7VI76FOX4vVCxCOhMX06zofn57rbh2uM4GPdcwHTypxUn/s5fxsMsBmKmJUs8ORwhsSKqDJbKT3KrtvEb6vYwJnoDi766DT+ygeqMV09PTrSowv4ytUbs6cYbUnwW4HXSZwBoofrfeG3uraPK4ghZ9y2RJ8E++L79LLq06vV1hHJIJ8Z6C4jgkGiobepxtTNi3FKomPBT8L6lHfGzoln4RSOsYfpjvsTwzVUnyKCvjhsdPBzaHU05tbg5pAt13n/PbIj8JSSYQq+L4Mtk5Hem6OZUV2vSeN+pNIQRbCT3RpjB/K/FjN0Cbf9nWnLpuQYndce3Y/MMxEe6QQGBuFNY9ZRPCJW+OZN+zV6llIQW93R++xflTzIUhJWV0t2o7VlZEUMYlvkyFbV4d2r7Z+hNF7o9l4Pg8TI2ggAjg9IWvR9hw/2iM+FltsbPfMcR9r1Mr9KNCPH8d7qklG2EVfqTEIc3zYZcvHT849OD780nPL3wT/Qe1cDaaGxhrTcLtJ/PAZNyerl7ZTZkLJdl0v1I8ZvkDzrZ+oKHlyf4ZZijzMyO7po9Xj+AwA/ndoff8GKJqh4puAnwQxdmcond1osgqr8yqt38rEnz/2SovBDwbWTdm6meX6Fsgd9g6vguQZfEwOPqf1E4QkDFWNxCTCUgNhd9CYHZIDfDtz00GQg4fd9t6ov2diNx04YwmEAlY3NcSVMhDYwTMHR7cdh7XMSHd7552LPcvU5o2aOiOLAFrdOYK4z8PeQegh0fyH+VSa3wRfP172jzTZFO7SMT6AUMZlE8UPu/T0+ErCDp4ffIVOjwfkGR8Dvv/B5P2ZdLmapGg1gf///4mggslusqIAAAAASUVORK5CYII=" />
-                    <h6><strong>CSS3</strong></h6>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-3 col-xs-6 mb-2 mx-auto">
-                    <img class='icon-size' alt="CSS3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwf-Su_BlfH_VzkZTuJWdHuDvkZvlWnuKOyQ&usqp=CAU" />
-                    <h6><strong>Tailwind CSS</strong></h6>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-3 col-xs-6 mb-2 mx-auto">
-                    <img class='icon-size' alt="Bootstrap" src="https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg" />
-                    <h6><strong>Bootstrap</strong></h6>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-3 col-xs-6 mb-2 mx-auto">
-                    <img class='icon-size' alt="SASS" src="https://cdn.worldvectorlogo.com/logos/sass-1.svg" />
-                    <h6><strong>SASS</strong></h6>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-3 col-xs-6 mb-2 mx-auto">
-                    <img class='icon-size' alt="Font Awesome" src="https://cdn.worldvectorlogo.com/logos/fontawesome-1.svg" />
-                    <h6><strong>Font Awesome</strong></h6>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-3 col-xs-6 mb-2 mx-auto">
-                    <img class='icon-size' alt="JavaScript" src="https://cdn.worldvectorlogo.com/logos/javascript.svg" />
-                    <h6><strong>JavaScript</strong></h6>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-3 col-xs-6 mb-2 mx-auto">
-                    <img class='icon-size' alt="React.js" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" />
-                    <h6><strong>React.js</strong></h6>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-3 col-xs-6 mb-2 mx-auto">
-                    <img class='icon-size' alt="MongoDB" src="https://developer.asustor.com/uploadIcons/0020_999_1579584903_MongoDB_256.png" />
-                    <h6><strong>MongoDB</strong></h6>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-3 col-xs-6 mb-2 mx-auto">
-                    <img class='icon-size' alt="MySQL" src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" />
-                    <h6><strong>SQL Server</strong></h6>
-                </div>
-               
-                <div class="col-lg-1 col-md-2 col-sm-3 col-xs-6 mb-2 mx-auto">
-                    <img class='icon-size' alt="JSON" src="https://cdn.worldvectorlogo.com/logos/json.svg" />
-                    <h6><strong>JSON</strong></h6>
-                </div>
-                
-            </div>
-            <div class="row text-center">
-
-                <div class="col-lg-1 col-md-2 col-sm-3 col-xs-6 mb-2 mx-auto">
-                    <img class='icon-size' alt="Git" src="https://cdn.worldvectorlogo.com/logos/git-icon.svg" />
-                    <h6><strong>Git</strong></h6>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-3 col-xs-6 mb-2 mx-auto">
-                    <img class='icon-size' alt="GitHub" src="https://cdn.worldvectorlogo.com/logos/github-1.svg" />
-                    <h6><strong>GitHub</strong></h6>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-3 col-xs-6 mb-2 mx-auto">
-                    <img class='icon-size' alt="VSCode" src="https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg" />
-                    <h6><strong>VScode</strong></h6>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-3 col-xs-6 mb-2 mx-auto">
-                    <img class='icon-size' alt="Github Pages " src="https://techcrunch.com/wp-content/uploads/2010/07/github-logo.png?w=512 " />
-                    <h6><strong>Github Pages</strong></h6>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-3 col-xs-6 mb-2 mx-auto ">
-                    <img class='icon-size' alt="Heroku " src="https://www.drupal.org/files/issues/2019-12-27/heroku_logo.png " />
-                    <h6><strong>Heroku</strong></h6>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-3 col-xs-6 mb-2 mx-auto ">
-                    <img class='icon-size' alt="Netlify " src="https://seeklogo.com/images/N/netlify-logo-758722CDF4-seeklogo.com.png " />
-                    <h6><strong>Netlify</strong></h6>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-3 col-xs-6 mb-2 mx-auto">
-                    <!-- <img class='icon-size' alt="NPM" width="26px" src="https://s3.amazonaws.com/media-p.slid.es/uploads/136956/images/5133272/npm-logo-red.png" /> -->
-                    <img class='icon-size' alt="NPM" src="https://mpng.subpng.com/20180618/opl/kisspng-npm-node-js-computer-icons-computer-software-insta-5b278c9a4f9274.2530470115293185543259.jpg" />
-                    <h6><strong>NPM</strong></h6>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-    <!-- Skills End -->
-
-    <!-- Services Start -->
     <section class="site-section bg-light" id="section-services">
         <div class="container">
             <div class="row mb-4">
                 <div class="col-md-12">
                     <div class="section-heading text-center">
-                        <h2 class="pt-3 font-weight-lighter">My <strong>Services</strong></h2>
-                        <p class="lead text-white">
-                            <strong>I am offering a very special services and here are my main services</strong>
-                        </p>
+                        <h2 class="pt-3 font-weight-lighter">My <strong>Skills</strong></h2>
                     </div>
                 </div>
             </div>
             <div class="row text-center">
-                <div class="col-md-6 col-lg-4  mb-5">
+                <div class="col-md-12 col-lg-7  mb-5">
                     <div class="site-service-item">
                         <span class="icon">
-                            <span><i class="fas fa-code"></i></span>
+                            <span><i class="fas fa-network"></i></span>
                         </span>
-                        <h3 class="mb-4 font-weight-bold">Web Develop</h3>
+                        <h3 class="mb-4 font-weight-bold">System & Network Administration(IT Support)</h3>
                         <p class="lead">
-                            Web development by build responsive websites using HTML5, CSS3, Bootstrap, JavaScript(jQuery), Calling API (Json, xml).
+                            <ul class="fa-ul mb-0 text-light justify-content-center">
+                                <li>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    Networking Concepts (OSI Model, TCP/IP, Subnetting, VLSM, IPv4, IPv6)
+                                </li>
+                                <li>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    IT Essentials (Hardware & Software)
+                                </li>
+                                <li>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    Basic System Administration (Linux + Windows)
+                                </li>
+                                <li>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    Networking Fundamental (Cisco + MikroTik + TPLink)
+                                </li>
+                                <li>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                        FTTx Networking Technologies (OLT & ONU)</span>
+                                    
+                                </li>
+                                <li>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    Virtualization Basic, Introducing Cloud Computing
+                                </li>
+                                <li>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    Basic System & Network Security
+                                </li>
+                                <li>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    CCNA (Certification) -JNCIA/HCIA/RHCSA
+                                </li>
+                                <li>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    MikroTik -MTCNA (Certified) -MTCRE (Certification)
+                                </li>
+                                <li>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    CCNA (Certification) -JNCIA/HCIA/RHCSA
+                                </li>
+                                <li>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    Microsoft Office 365
+                                </li>
+                                <li>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    Firewall Fortinet Fortigate 
+                                </li>
+                                
+                            </ul>
                         </p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4  mb-5">
-                    <div class="site-service-item">
-                        <span class="icon">
-                            <span><i class="fas fa-chart-line"></i></span>
-                        </span>
-                        <h3 class="mb-4 font-weight-bold">SEO Optimization</h3>
-                        <p class="lead">
-                            SEO initiatives elevating rankings on Google search engines.
-                        </p>
+                
+                <!-- <div class="row text-center"> -->
+                    <div class="col-md-12 col-lg-5 mb-5">
+                        <div class="site-service-item">
+                            <span class="icon">
+                                <span><i class="fas fa-code"></i></span>
+                            </span>
+                            <h3 class="mb-4 font-weight-bold">Software Development(Oracle Apex)</h3>
+                            <p class="lead">
+                                <ul class="fa-ul mb-0 text-light justify-content-center">
+                                    <li>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        Programming in HTML5 with JavaScript & CSS3
+                                       
+                                    </li>
+                                    <li>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        Database Management System (DBMS)
+                                    </li>
+                                    <li>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        Oracle Database 19c: SQL
+                                    </li>
+                                    <li>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        Oracle Database 19c: Program with PL/SQL
+                                    </li>
+                                    <li>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        Oracle Fusion Middleware 11g: Build Applications with Oracle Forms
+                                    </li>
+                                    <li>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        Oracle Report Developer: Build Reports
+                                        -Jasper Report
+                                        -BI Publisher Report
+                                        -HTML Report.</span>
+                                        
+                                    </li>
+                                    <li>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        Oracle Application Express (Apex)
+-Project
+- Human Resource Management.
+- Order & Sales Management
+                                    </li>
+                                    
+                                    
+                                </ul>
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4  mb-5">
-                    <div class="site-service-item">
-                        <span class="icon">
-                            <span><i class="fab fa-chrome"></i></span>
-                        </span>
-                        <h3 class="mb-4 font-weight-bold">Web Application</h3>
-                        <p class="lead">
-                            Create, Build and Deploy apps using relational/No-relational database as a service with tools including Node.js.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4  mb-5">
-                    <div class="site-service-item">
-                        <span class="icon">
-                            <span><i class="fas fa-paint-brush"></i></span>
-                        </span>
-                        <h3 class="mb-4 font-weight-bold">Animation</h3>
-                        <p class="lead">
-                            Implementing visual elements and create animations that users see and interact with in a website.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4  mb-5">
-                    <div class="site-service-item">
-                        <span class="icon">
-                            <span><i class="fas fa-mobile-alt"></i></span>
-                        </span>
-                        <h3 class="mb-4 font-weight-bold">Responsive Design</h3>
-                        <p class="lead">
-                            Create a website that looks great on every device. Fully Customizable Web Templates and mobile optimized.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4  mb-5">
-                    <div class="site-service-item">
-                        <span class="icon">
-                            <span><i class="fas fa-layer-group"></i></span>
-                        </span>
-                        <h3 class="mb-4 font-weight-bold">E-commerce website</h3>
-                        <p class="lead">
-                            Building an e-commerce website.
-                        </p>
-                    </div>
-                </div>
+            
             </div>
         </div>
     </section>
-    <!-- Services End -->
+    
+    <!-- Skills End -->
+
+   
 
     <!-- Portfolio Start -->
     <section class="site-section" id="section-portfolio">
